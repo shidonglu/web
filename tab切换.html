@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	input{
+		display: none;
+	}
+	label{
+		display: block;
+		width: 100px;
+		height: 30px;
+		float: left;
+		text-align: center;
+		line-height: 30px;
+
+	}
+	ul{
+		clear: both;
+		position: relative;
+	}
+	ul li{
+		position: absolute;
+		list-style: none;
+		float: left;
+		width:300px;
+		height: 100px;
+		text-align: center;
+		line-height: 100px; 
+		display: none;
+	}
+	#p1:checked~ul li:nth-of-type(1){
+	       display: block;
+	       background: green;
+    }
+    #p2:checked~ul li:nth-of-type(2){
+	       display: block;
+	       background:red;
+    }
+    #p3:checked~ul li:nth-of-type(3){
+	       display: block;
+	       background: orange;
+    }
+    #p1:checked~label:nth-of-type(1){
+	       background: #507bbf;
+	       color:white;
+    }
+    #p2:checked~label:nth-of-type(2){
+	       background: #507bbf;
+	       color:white;
+    }
+    #p3:checked~label:nth-of-type(3){
+	       background: #507bbf;
+	       color:white;
+    }
+
+	</style>
+</head>
+<body>
+<input type="radio" checked="checked" id="p1" name="a"><label for="p1">A</label>
+<input type="radio"  id="p2" name="a"><label for="p2">B</label>
+<input type="radio"  id="p3" name="a"><label for="p3">C</label>
+<ul>
+	<li>A</li>
+	<li>B</li>
+	<li>C</li>
+</ul>
+
+
+</body>
+</html>

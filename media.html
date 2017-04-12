@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>media</title>
+	<meta name="viewport" content="width=dvice-width,initial-scale=1,maximum-scale=1,minmum-scale=1">
+	<style>
+	ul{
+		margin: 0px;
+		padding: 0px;
+	}
+	ul li{
+		float: left;
+		width: 15%;
+		border:5px solid blue;
+	}
+	
+	@media (max-width:900px){
+        .li3{
+        	display: none;
+        }
+        ul li{
+        	width: 20%;
+        }
+        ul li:nth-child(5),ul li:nth-child(6){
+        	display: none;
+        }
+	}
+
+		
+	</style>
+	
+</head>
+<body>
+	<ul>
+		<li>A</li>
+		<li>B</li>
+		<li class="li3">C</li>
+		<li>D</li>
+		<li>D</li>
+		<li>D</li>
+		
+	</ul>
+</body>
+</html>
